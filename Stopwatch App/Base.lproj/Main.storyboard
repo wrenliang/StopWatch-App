@@ -18,55 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-mz-rfe">
-                                <rect key="frame" x="186" y="74" width="42" height="137.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AD7-d2-aLz">
+                                <rect key="frame" x="184" y="60" width="42" height="110.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI9-X1-1Tk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wle-ww-zzm">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-yL-U95">
-                                        <rect key="frame" x="0.0" y="29.5" width="42" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbN-sQ-WaR">
+                                        <rect key="frame" x="0.0" y="20.5" width="42" height="30"/>
                                         <state key="normal" title="Start"/>
                                         <connections>
-                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xah-3j-W1S"/>
-                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIo-Px-CE5"/>
+                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMr-MV-8SR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-c3-vKm">
-                                        <rect key="frame" x="0.0" y="68.5" width="42" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-Zd-MD2">
+                                        <rect key="frame" x="0.0" y="50.5" width="42" height="30"/>
                                         <state key="normal" title="Pause"/>
                                         <connections>
-                                            <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwN-KT-LfX"/>
-                                            <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiG-oX-nyH"/>
+                                            <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nub-Xf-tdI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9x-PO-aAR">
-                                        <rect key="frame" x="0.0" y="107.5" width="42" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyW-bE-E57">
+                                        <rect key="frame" x="0.0" y="80.5" width="42" height="30"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
-                                            <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axV-D3-9qY"/>
-                                            <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXh-QG-NbZ"/>
+                                            <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zw2-Qb-Keo"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="eBN-mz-rfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Cc6-lh-GKM"/>
-                            <constraint firstItem="eBN-mz-rfe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLC-Jb-AdL"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="pauseButton" destination="YPo-c3-vKm" id="S6b-ah-6a3"/>
-                        <outlet property="resetButton" destination="K9x-PO-aAR" id="mzv-xt-L8L"/>
-                        <outlet property="startButton" destination="UnC-yL-U95" id="cpO-i5-yVF"/>
-                        <outlet property="stopButton" destination="YPo-c3-vKm" id="sg0-V7-aZg"/>
-                        <outlet property="timeLabel" destination="bI9-X1-1Tk" id="gO4-sw-W8U"/>
+                        <outlet property="StackView" destination="AD7-d2-aLz" id="wW7-Ad-I2k"/>
+                        <outlet property="pauseButton" destination="Orp-Zd-MD2" id="zIg-ac-Yue"/>
+                        <outlet property="resetButton" destination="AyW-bE-E57" id="1Wi-DJ-i2n"/>
+                        <outlet property="startButton" destination="YbN-sQ-WaR" id="nSu-fs-LeD"/>
+                        <outlet property="timeLabel" destination="wle-ww-zzm" id="gLy-EU-3NR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
